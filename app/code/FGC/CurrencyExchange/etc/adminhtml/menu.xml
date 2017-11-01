@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="FGC_CurrencyExchange::parent" title="Currency Exchange" module="FGC_CurrencyExchange" sortOrder="100" resource="FGC_CurrencyExchange::parent"/>
+        <add id="FGC_CurrencyExchange::index" title="Currency Exchange Index" module="FGC_CurrencyExchange" sortOrder="10" action="currencyexchange/index" resource="FGC_CurrencyExchange::index" parent="FGC_CurrencyExchange::parent"/>
+		
+    </menu>
+</config>

@@ -1,0 +1,13 @@
+
+### Get list rate
+
+GET https://openexchangerates.org/api/latest.json?app_id=468184008cbe44c1822f54132e906776
+content-type: application/json
+
+### Convert: https://openexchangerates.org/api/convert/:value/:from/:to
+
+GET http://api.fixer.io/latest
+
+###
+
+GET http://finance.yahoo.com/d/quotes.csv?e=.csv&f=c4l1&s=USD=X,CAD=X,EUR=X

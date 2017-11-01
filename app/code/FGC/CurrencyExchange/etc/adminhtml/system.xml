@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="currency" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+            <resource>Magento_Config::currency</resource>
+            <group id="currency_exchange" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>FGC Currency Exchange</label>
+                <field id="custom_field1" type="text" translate="label comment" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Custom Field 1</label>
+            </field>
+            </group>
+        </section>
+    </system>
+</config>
