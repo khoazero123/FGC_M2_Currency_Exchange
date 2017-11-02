@@ -3,19 +3,19 @@
     <system>
         <section id="currency" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
             <resource>Magento_Config::currency</resource>
-            <group id="currency_exchange" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="exchange_rate" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>FGC Currency Exchange</label>
-                <!-- <field id="custom_field1" type="text" translate="label comment" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                <field id="custom_field1" type="text" translate="label comment" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
 					<label>Custom Field 1</label>
-				</field> -->
-                <field id="countries_available" translate="label" type="multiselect" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+				</field>
+                <field id="countries_available" translate="label" type="multiselect" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Countries available</label>
                     <source_model>FGC\CurrencyExchange\Model\Countries</source_model>
                     <can_be_empty>1</can_be_empty>
                 </field>
-                <field id="currency_base" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <field id="currency_base" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Currency base</label>
-                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                    <source_model>FGC\CurrencyExchange\Model\Countries</source_model>
                 </field>
             </group>
         </section>
