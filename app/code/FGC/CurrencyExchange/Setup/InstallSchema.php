@@ -22,7 +22,7 @@ class InstallSchema implements InstallSchemaInterface {
             ->newTable($setup->getTable('fgc_currencies'))
             ->addColumn(
                 'country_code', \Magento\Framework\DB\Ddl\Table::TYPE_TEXT, 4,
-                ['unsigned' => true, 'nullable' => false, 'primary' => true],
+                ['nullable' => false],
                 'Country Code'
             )
             ->addColumn(
@@ -32,7 +32,7 @@ class InstallSchema implements InstallSchemaInterface {
               )
               ->addColumn(
                 'currency_code', \Magento\Framework\DB\Ddl\Table::TYPE_TEXT, 4,
-                ['unsigned' => true, 'nullable' => false, 'primary' => true],
+                ['nullable' => false],
                 'Currency Code'
             )
             ->addColumn(
@@ -42,7 +42,7 @@ class InstallSchema implements InstallSchemaInterface {
             )
             ->addColumn(
                 'rate', \Magento\Framework\DB\Ddl\Table::TYPE_FLOAT, null,
-                ['nullable' => false, 'default' => 1],
+                ['nullable' => true, 'default' => null],
                 'Currency Rate'
             )->setComment("Currencies table");
           $setup->getConnection()->createTable($table);
