@@ -10,4 +10,8 @@ GET http://api.fixer.io/latest
 
 ###
 
+GET https://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json&callback=list
+
+### https://stackoverflow.com/questions/5108399/yahoo-finance-all-currencies-quote-api-documentation
+
 GET http://finance.yahoo.com/d/quotes.csv?e=.csv&f=c4l1&s=USD=X,CAD=X,EUR=X
